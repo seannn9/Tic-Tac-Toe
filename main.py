@@ -1,5 +1,8 @@
+import random
+
 # Text based tic tac toe
 board = [" " for i in range(10)]
+empty = ' '
 
 def drawBoard(board):
     print("    |    |")
@@ -20,7 +23,7 @@ def player():
     return place
 
 def comp(player):
-    if board[player-1] == ' ' or board[player+1] == ' ':
+    if empty == board[player-1] or board[player+1] or board[player-2] or board[player-3]:
         board[1] = 'O'
 
 def main():
