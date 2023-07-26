@@ -1,6 +1,5 @@
 import random
 
-# Text based tic tac toe
 board = [" " for i in range(10)]
 empty = ' '
 
@@ -23,8 +22,10 @@ def player():
     return place
 
 def comp(player):
-    if empty == board[player-1] or board[player+1] or board[player-2] or board[player-3]:
-        board[1] = 'O'
+    pass
+
+def boardIsEmpty():
+    pass
 
 def main():
     comp(player())
